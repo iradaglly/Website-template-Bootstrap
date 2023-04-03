@@ -1,0 +1,152 @@
+.hero {
+    height: 97vh;
+    background-image: url(https://w0.peakpx.com/wallpaper/105/761/HD-wallpaper-twisted-color-gradient-background.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.container-hero {
+    width: 82%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .content .text {
+    text-align: center;
+    color: white;
+    font-family: 'Catamaran', sans-serif;
+    line-height: 100px;
+    padding-top: 4%;
+}
+
+.hero .content .text h1 {
+    font-size: 6rem;
+    font-weight: 700;
+
+}
+
+.hero .content .text h2 {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.hero .content .text .btn .learn-more-btn {
+    padding: 1.3rem 3rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 9%;
+    transform: translateY(-50%);
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: #c4166a;
+    font-family: 'Catamaran', sans-serif;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.hero .content .text .btn .learn-more-btn:hover {
+    background-color: #8b0f4b;
+}
+
+@media only screen and (max-width:992px) {
+    .hero {
+        height: 100vh;
+    }
+
+    .hero .content .text {
+        line-height: 80px;
+    }
+
+    .hero .content .text h1 {
+        font-size: 4rem;
+    }
+
+    .hero .content .text h2 {
+        font-size: 2rem;
+    }
+
+    .hero .content .text .btn .learn-more-btn {
+        margin-top: 15%;
+    }
+}
+
+.about {
+    margin: 5% 0;
+}
+
+.about .column {
+    display: flex;
+}
+
+.about .col-6 {
+    padding: 0 15px;
+}
+
+.about .col-6 .info {
+    padding-top: 20%;
+}
+
+.about .col-6 .info h2 {
+    font-size: 3.5rem;
+    color: black;
+    font-weight: 300;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.about .col-6 .info p {
+    padding: 40px 90px 35px 0px;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.about .col-6 .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .col-6 .img img {
+    width: 90%;
+    height: auto;
+    background-size: cover;
+    border: 1px solid none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width:1200px) {
+    .about .col-6 .img img {
+        margin-top: 15%;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .about .column {
+        flex-direction: column-reverse;
+    }
+
+    .about .col-6 .img img {
+        width: 60%;
+        height: auto;
+    }
+
+    .about .col-6 .info {
+        padding-top: 3%;
+
+    }
+
+    .about .col-6 .info h2 {
+        font-size: 2.5rem;
+    }
+
+    .about .col-6 .info p {
+        padding: 40px 90px 35px 0px;
+        font-size: 16px;
+    }
+}
